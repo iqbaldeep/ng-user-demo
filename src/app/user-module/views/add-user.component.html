@@ -25,11 +25,11 @@
     <form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
         <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" required  ngModel name="firstName">
+            <input type="text" class="form-control" id="firstName" required  ngModel name="firstName" maxlength="15">
         </div>
         <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" required  ngModel name="lastName">
+            <input type="text" class="form-control" id="lastName" required  ngModel name="lastName" maxlength="15">
         </div>
         <div class="form-group">
             <label for="dob">Date of Birth</label>
