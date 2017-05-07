@@ -27,6 +27,7 @@ td, th {
 .search-box {
   position: relative;
   width:25% ;
+  min-width: 200px;
 }
 
 /* style icon */
