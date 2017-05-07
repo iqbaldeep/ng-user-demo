@@ -1,0 +1,43 @@
+<div [hidden]="!addSuccess" *ngIf="newUser">
+    <h2>You created:</h2>
+    <div class="row">
+        <div class="col-xs-3">User ID</div>
+        <div class="col-xs-9  pull-left">{{ newUser.id }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">First Name</div>
+        <div class="col-xs-9  pull-left">{{ newUser.firstName }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">Last Name</div>
+        <div class="col-xs-9 pull-left">{{ newUser.lastName }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">Date of Birth</div>
+        <div class="col-xs-9 pull-left">{{ newUser.dob }}</div>
+    </div>
+    <br>
+    <button class="btn btn-primary" (click)="this.addSuccess=false">Add Another</button>
+</div>
+
+<div [hidden]="addSuccess">
+    <h2>Create User</h2>
+    <form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" required  ngModel name="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required  ngModel name="lastName">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" required ngModel name="dob">
+        </div>
+        <button type="submit" class="btn btn-success"
+                [disabled]="!userForm.form.valid">Create</button>
+    </form>
+</div>
+
+<div class="loader" [hidden]="hideLoader"></div>
