@@ -14,10 +14,10 @@ import {User} from '../user-module/models/user';
 @Injectable()
 export class UserService {
 
-  // private usersUrl = 'http://138.68.224.242:8080/v1/users';  // URL to web api
-  // private addUserUrl = 'http://138.68.224.242:8080/v1/addUser';
-  private usersUrl = 'http://localhost:8080/v1/users';  // URL to web api
-  private addUserUrl = 'http://localhost:8080/v1/addUser';  // URL to web api
+  private usersUrl = 'http://138.68.224.242:8080/v1/users';  // URL to web api
+  private addUserUrl = 'http://138.68.224.242:8080/v1/addUser';
+  // private usersUrl = 'http://localhost:8080/v1/users';  // URL to web api
+  // private addUserUrl = 'http://localhost:8080/v1/addUser';  // URL to web api
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) { }
