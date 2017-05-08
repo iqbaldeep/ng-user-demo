@@ -15,8 +15,8 @@ This app uses Observer pattern to communicate between two components.
 * Install typings `npm i -g typings@1.3.3`
 * Install ts-node `npm i -g ts-node@1.3.0`
 ### Build app ###
-* Clone repository using `git clone https://github.com/iqbaldeep/angular-employee-demo.git`
-* Navigate to directory `cd angular-employee-demo`
+* Clone repository using `git clone https://github.com/iqbaldeep/ng-user-demo.git`
+* Navigate to directory `cd ng-user-demo`
 * Install dependencies using `npm install`
 ### Run app ###
 
