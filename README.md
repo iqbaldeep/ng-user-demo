@@ -21,4 +21,5 @@ This app uses Observer pattern to communicate between two components.
 ### Run app ###
 
 * Run app using `npm start`
+* This will fire up default browser with URL `http://localhost:3000`
 
